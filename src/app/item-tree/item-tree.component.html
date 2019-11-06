@@ -1,6 +1,6 @@
 <div *ngFor="let item of values">
     <div class="item-tree" [ngStyle]="tab ? {paddingLeft: '40px'} : {}">
-        <div class="item" (click)="onClickedItem(item)">{{item.name}}</div>
-        <app-item-tree [values]="item.item" [tab]="true" (selectedItem)="onClickedItem($event)"></app-item-tree>
+        <div class="item" (click)="onClickedItem(item)">{{item.titlePtBr}}</div>
+        <app-item-tree [values]="item.items" [tab]="true" (selectedItem)="onClickedItem($event)"></app-item-tree>
     </div>
 </div>
