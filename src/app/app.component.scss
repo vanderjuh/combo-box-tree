@@ -1,0 +1,40 @@
+$height-combobox: 50px;
+
+* {
+    box-sizing: border-box;
+}
+
+.combobox{
+    width: 90%;
+    border:#CCC solid 1px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr $height-combobox;
+    grid-template-rows: $height-combobox auto;
+    margin: 10px;
+}
+
+.combobox input {
+    border-radius: 10px 0 0 10px;
+    border: 0;
+    padding: 5px 10px 5px 10px;
+    font-size: 20px;
+}
+
+.combobox button {
+    border-radius: 0 10px 10px 0;
+    border: 0;
+    margin: 1px 1px 1px 0;
+    background: transparent;
+}
+
+.auto-complete{
+    width: inherit;
+    max-height: 300px;
+    overflow: scroll;
+    border:#ccc solid 1px;
+    grid-column: 1 / -1;
+    position: absolute;
+    margin-top: $height-combobox;
+    background: white;
+}
